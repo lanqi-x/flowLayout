@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlowLayout">
+        <attr name="surplusSpacingMode" format="integer">
+            <enum name="SURPLUSSPACINGMODE_AUTO" value="0" />
+            <enum name="SURPLUSSPACINGMODE_SHARE" value="1" />
+            <enum name="SURPLUSSPACINGMODE_SPACE" value="2"/>
+        </attr>
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="maxLines" format="integer" />
+
+    </declare-styleable>
+</resources>

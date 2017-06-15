@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="限定高度220dp" />
+
+        <com.lanqix.flowlayout.FlowLayout
+            android:id="@+id/f1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:padding="10dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="限定2行，每行剩余空间平分宽度" />
+
+        <com.lanqix.flowlayout.FlowLayout
+            android:id="@+id/f2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:maxLines="2"
+            android:padding="10dp"
+            app:surplusSpacingMode="SURPLUSSPACINGMODE_SHARE"
+            android:background="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="直接addView，每行剩余空间分配水平间距" />
+
+        <com.lanqix.flowlayout.FlowLayout
+            android:id="@+id/f3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            app:surplusSpacingMode="SURPLUSSPACINGMODE_SPACE"
+            android:background="@android:color/holo_orange_light"/>
+
+    </LinearLayout>
+</ScrollView>
