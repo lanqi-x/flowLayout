@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="FlowLayout">
-        <attr name="surplusSpacingMode" format="integer">
+        <attr name="surplusSpacingMode" format="enum">
             <enum name="SURPLUSSPACINGMODE_AUTO" value="0" />
             <enum name="SURPLUSSPACINGMODE_SHARE" value="1" />
             <enum name="SURPLUSSPACINGMODE_SPACE" value="2"/>
